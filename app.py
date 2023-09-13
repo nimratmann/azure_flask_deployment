@@ -3,6 +3,12 @@ import pandas as pd
 
 app = Flask(__name__)
 
+# Sample CSV URL
+csv_url = 'https://raw.githubusercontent.com/nimratmann/azure_flask_deployment/main/Dataset/New_York_City_Leading_Causes_of_Death.csv'
+
+# Load the CSV data
+df = pd.read_csv(csv_url)
+
 @app.route('/')
 def index():
     return render_template('base.html')
@@ -11,11 +17,11 @@ def index():
 def about():
     return render_template('about.html')
 
-df = pd.read_csv('https://raw.githubusercontent.com/hantswilliams/HHA_504_2023/main/WK1/data/113243405_StonyBrookSouthamptonHospital_StandardCharges.csv')
 @app.route('/data')
-def data(data=df):
-    data = data.sample(15)
-    return render_template('data.html', data=data)
+def data():
+    # Sample 20 rows from the loaded CSV data
+    sample_data = df.sample(20)
+    return render_template('data.html', data=sample_data)
 
 if __name__ == '__main__':
     app.run(

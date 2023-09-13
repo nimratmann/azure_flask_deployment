@@ -2,26 +2,37 @@
 
 {% block content %}
 
-    <section>
-        <h2 class="text-xl mb-2"> Dataset preview using a TABLE in HTML</h2>
-        <table class="table-auto">
-            <thead>
-                <tr>
-                    <th class="px-4 py-2">HospCode</th>
-                    <th class="px-4 py-2">Code</th>
-                    <th class="px-4 py-2">Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for data in data.values %}
-                <tr>
-                    <td class="border px-4 py-2">{{ data[0] }}</td>
-                    <td class="border px-4 py-2">{{ data[1] }}</td>
-                    <td class="border px-4 py-2">{{ data[2] }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </section>
+<section>
+    <h2 class="text-xl mb-2">Dataset Preview</h2>
+    <table class="table-auto">
+        <thead>
+            <tr>
+                <th class="px-4 py-2">Year</th>
+                <th class="px-4 py-2">Ethnicity</th>
+                <th class="px-4 py-2">Gender</th>
+                <th class="px-4 py-2">CauseofDeath</th>
+                <th class="px-4 py-2">Count</th>
+                <th class="px-4 py-2">Percent</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in data.values %}
+            <tr>
+                <td class="border px-4 py-2">{{ data[0] }}</td>
+                <td class="border px-4 py-2">{{ data[1] }}</td>
+                <td class="border px-4 py-2">{{ data[2] }}</td>
+                <td class="border px-4 py-2">{{ data[3] }}</td>
+                <td class="border px-4 py-2">{{ data[4] }}</td>
+                <td class="border px-4 py-2">{{ data[5] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+
+<!-- Add a link to download the CSV data -->
+<div class="mt-4">
+    <a href="{{ csv_url }}" class="text-blue-500">Download CSV file</a>
+</div>
 
 {% endblock %}
