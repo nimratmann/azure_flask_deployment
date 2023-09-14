@@ -4,3 +4,7 @@ This is an azure flask deployment. My Azure Webapp link is below.
 
 Welcome to My Healthcare Webpage: 
 [my-hha504-webapp.azurewebsites.net](my-hha504-webapp.azurewebsites.net)
+
+
+## Step-by-step Guide on Setup and Deployment of Application
+1. 
