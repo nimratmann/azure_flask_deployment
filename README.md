@@ -24,8 +24,8 @@ In the Azure portal, create a new Azure App Service and resource group.
    az account set --subscription yoursubscriptionId
    az group list
    To launch:
-   az webapp up --resource-group (name of resource group) --name (your app service name) --runtime PYTHON:3.9 --sku B1
+      az webapp up --resource-group (name of resource group) --name (your app service name) --runtime PYTHON:3.9 --sku B1
    To delete:
-   az webapp delete --name MyWebapp --resource-group MyResourceGroup
+      az webapp delete --name MyWebapp --resource-group MyResourceGroup
    ```
 
