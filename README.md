@@ -16,7 +16,7 @@ Sign in to your Azure portal (https://portal.azure.com/) or create a new Azure a
 In the Azure portal, create a new Azure App Service and resource group.
 3. Code Your Application: (Used shell.google.cloud)
 4. Enter the following commands in the Linux terminal to initiate deployment:
-   ''' python
+   ``` python
    curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
    az
    az login --use-device-code
@@ -27,5 +27,5 @@ In the Azure portal, create a new Azure App Service and resource group.
    az webapp up --resource-group (name of resource group) --name (your app service name) --runtime PYTHON:3.9 --sku B1
    To delete:
    az webapp delete --name MyWebapp --resource-group MyResourceGroup
-   '''
+   ```
 
