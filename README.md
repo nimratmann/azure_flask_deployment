@@ -11,9 +11,8 @@ Step 1:
 Using Github, create a new repository including a Readme file and name it ```azure_flask_deployment```. Then go to "shell.google.cloud" to open the Google Shell Environment and import your GitHub repository using the git clone command followed by link of repo.
 
 Step 2:
-```
-Create a new folder labeled "Templates" and add "base.html, "about.html" and "data.html" files. These files will consist code copied and pasted from hantswilliams/hha504/wk2/flaskapp_0 folder.
-```
+Create a new folder labeled "Templates" and add ```base.html, about.html" and data.html``` files. These files will consist code copied and pasted from hantswilliams/hha504/wk2/flaskapp_0 folder.
+
 Step 3:
 ```
 
