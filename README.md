@@ -6,12 +6,11 @@ Welcome to My Healthcare Webpage:
 [my-hha504-webapp.azurewebsites.net](my-hha504-webapp.azurewebsites.net)
 
 
-## Step-by-step Guide on Setup and Deployment of Application Locally 
-1. 
-
-## Step-by-step Guide on Setup and Deployment of Application via Azure 
-1. Azure Account:
-Sign in to your Azure portal (https://portal.azure.com/) or create a new Azure account if you don't have one.
+## Step-by-step Guide on Setup and Deployment of Web Application using Azure and HTML.
+Step 1:
+``` Using Github, create a new repository and name it "azure_flask_deployment". Add a Readme file.
+    Then go to "shell.google.cloud" to open the Google Shell Environment and import your GitHub repository using the git clone command followed by link of repo.
+```
 2. Create an App Service:
 In the Azure portal, create a new Azure App Service and resource group.
 3. Code Your Application: (Used shell.google.cloud)
