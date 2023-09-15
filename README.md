@@ -11,10 +11,23 @@ Step 1:
 Using Github, create a new repository including a Readme file and name it ```azure_flask_deployment```. Then go to "shell.google.cloud" to open the Google Shell Environment and import your GitHub repository using the git clone command followed by link of repo.
 
 Step 2:
-Create a new folder labeled "Templates" and add ```base.html, about.html" and data.html``` files. These files will consist code copied and pasted from hantswilliams/hha504/wk2/flaskapp_0 folder.
+Create an ```app.py``` file and copy and paste python code from  hantswilliams/hha504/wk2/flaskapp_0/app.py folder. In this folder, import Flask and Pandas.
 
 Step 3:
+Create a ```requirements.txt``` file and insert ```python-dotenv, pandas, flask, gunicorn```.
+
+Step 4:
+Create a new folder labeled "Templates" and add ```base.html, about.html and data.html``` files. These files will consist of code copied and pasted from hantswilliams/hha504/wk2/flaskapp_0/Templates folder.
+
+Step 5:
+Ensure to push these changes back to Github to update repository using the following commands in the terminal 
 ```
+git add .
+git commit-m 'Message'
+git push
+```
+
+
 
 
 
