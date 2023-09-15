@@ -8,10 +8,31 @@ Welcome to My Healthcare Webpage:
 
 ## Step-by-step Guide on Setup and Deployment of Web Application using Azure and HTML.
 Step 1:
+Using Github, create a new repository including a Readme file and name it ```azure_flask_deployment```. Then go to "shell.google.cloud" to open the Google Shell Environment and import your GitHub repository using the git clone command followed by link of repo.
+
+Step 2:
 ```
-Using Github, create a new repository including a Readme file and name it "azure_flask_deployment". Then go to "shell.google.cloud" to open the Google Shell Environment and import your GitHub repository using the git clone command followed by link of repo.
+Create a new folder labeled "Templates" and add "base.html, "about.html" and "data.html" files. These files will consist code copied and pasted from hantswilliams/hha504/wk2/flaskapp_0 folder.
 ```
-2. Create an App Service:
+Step 3:
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 In the Azure portal, create a new Azure App Service and resource group.
 3. Code Your Application: (Used shell.google.cloud)
 4. Enter the following commands in the Linux terminal to initiate deployment:
